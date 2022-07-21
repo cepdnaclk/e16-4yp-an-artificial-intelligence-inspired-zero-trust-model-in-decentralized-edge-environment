@@ -13,13 +13,13 @@ title: An Artificial Intelligence Inspired Zero Trust Model in Decentralized Edg
 
 #### Team
 
-- E/16/242, Munasinghe A.V.S.S.A, [email](mailto:e16242@eng.pdn.ac.lk)
-- E/16/286, Piyarathna M.G.N.H, [email](mailto:e16286@eng.pdn.ac.lk)
-- E/16/399, Wijerathna D.G.K.E, [email](mailto:e16399@eng.pdn.ac.lk)
+- E/16/242, Munasinghe A.V.S.S.A, [e16242@eng.pdn.ac.lk](mailto:e16242@eng.pdn.ac.lk)
+- E/16/286, Piyarathna M.G.N.H, [e16286@eng.pdn.ac.lk](mailto:e16286@eng.pdn.ac.lk)
+- E/16/399, Wijerathna D.G.K.E, [e16399@eng.pdn.ac.lk](mailto:e16399@eng.pdn.ac.lk)
 
 #### Supervisors
 
-- Dr. Upul Jayasinghe, [email](mailto:upuljm@eng.pdn.ac.lk)
+- Dr. Upul Jayasinghe, [upuljm@eng.pdn.ac.lk](mailto:upuljm@eng.pdn.ac.lk)
 
 #### Table of content
 
