@@ -1,34 +1,25 @@
 {
-    "team": [
-        {
-            "name": "A.V.S.S.A. Munasinghe",
-            "email": "e16242@eng.pdn.ac.lk",
-            "eNumber": "E/16/242"
-        },
-        {
-            "name": "M.G.N.H. Piyarathna",
-            "email": "e16286@eng.pdn.ac.lk",
-            "eNumber": "E/16/286"
-        },
-        {
-            "name": "D.G.K.E. Wijerathne",
-            "email": "e16399@eng.pdn.ac.lk",
-            "eNumber": "E/16/399"
-        }
-    ],
-    "supervisors": [
-        {
-            "name": "Dr. Upul Jayasinghe",
-            "email": "upuljm@eng.pdn.ac.lk"
-        },
-       
-    ],
-    "media": [
-        {
-            "type": "youtube",
-            "title": "",
-            "url": "#"
-        }
-    ],
-    "tags": ["Final Year Projects"]
+	"team": [{
+			"name": "A.V.S.S.A. Munasinghe",
+			"email": "e16242@eng.pdn.ac.lk",
+			"eNumber": "E/16/242"
+		},
+		{
+			"name": "M.G.N.H. Piyarathna",
+			"email": "e16286@eng.pdn.ac.lk",
+			"eNumber": "E/16/286"
+		},
+		{
+			"name": "D.G.K.E. Wijerathne",
+			"email": "e16399@eng.pdn.ac.lk",
+			"eNumber": "E/16/399"
+		}
+	],
+	"supervisors": [{
+			"name": "Dr. Upul Jayasinghe",
+			"email": "upuljm@eng.pdn.ac.lk"
+		}
+
+	],
+	"tags": ["Final Year Projects", "ZTA", "Trust", "Machine Learning", "Edge Computing"]
 }
