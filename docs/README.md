@@ -9,7 +9,7 @@ title: An Artificial Intelligence Inspired Zero Trust Model in Decentralized Edg
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Project Title
+# An Artificial Intelligence Inspired Zero Trust Model in Decentralized Edge Environment
 
 #### Team
 
