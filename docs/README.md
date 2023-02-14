@@ -54,6 +54,72 @@ The paper highlights the growing importance of Zero Trust Architecture (ZTA) as 
 ## Methodology
 Before doing anything data preprocessing was applied to the raw dataset and the following techniques were applied.
 
+1. Data cleaning (Null, Missing, hex values)
+  * If some column contains high Null values or missing values percentage, the corresponding column was dropped
+  * Some columns contain values in hex format. Since model training is not possible with hex values, those values are converted to integer values
+2. Creating attack-wise labels
+  * Original dataset has a label called attack_type. But our task, it was required nine different labels for nine attack types.
+
+| attack_type   |
+| ------------- |
+| Dos           | 
+| Analysis      |
+
+Before
+
+| attack_type   | Dos  | Analysis  |
+| ------------- |----- |---------- |
+| Dos           | 1    |   0       |
+| Analysis      | 0    |   1       |
+
+After
+
+3. Encode the categorical data to numerical format
+4.  Splitting the data (60%,20%,20%) for train, test and online learning
+  * 60%: training machine learning models
+  * 20%: testing the models
+  * 20%: online learning for better tuning of the models
+
+Original dataset comes with 49 traffic features and around 2.5 million records. To reduce the computational complexity of model training, feature selection techniques were applied to select the most appropriate features. Following is the roadmap for the feature selection,
+
+  * Remove features with High correlation
+  * Used Information gain to reduce features
+  * Used variable threshold method to identify constant features
+  * Chi-Square statistical Analysis
+  
+When considering the methodology, dataset with selected features were fed into nine machine learning models. For one training model,
+
+  * Only one attack label was fed. For Dos attacks,
+
+| attack_type   | Dos  |
+| ------------- |----- |
+| Dos           | 1    |
+| Analysis      | 0    |
+
+  * To select the best algorithm for one machine learning model, a few algorithms were tried.
+    * Logistic Regression
+    * Decision Tree Regressor
+    * Random Forest Regressor
+    * K Nearest Neighbors Regressor
+    * Deep Neural Network
+    * SVM Regressor
+    * Isolation Forest
+    * One Class SVM
+
+As the output of machine learning models probability values were taken out. Hence, for one traffic data, there will be nine different probability values corresponding to nine different attacks. Then for each machine learning model’s output, a suitable threshold value was defined based on accuracy and F1 score. In this way, we can get a direct idea about the attack type for a particular traffic data. As an example,
+
+  * Threshold for DoS attacks: 90%
+
+If we get a higher probability value than 0.9 when traffic data is fed into the model related to the DoS attacks, we can conclude that traffic data has a high probability to be a DoS attack.After that, it was required to combine nine probability values and derive one trust value. Here, ensemble learning techniques were used to derive the final trust value. Candidates used for this project are listed below,
+ 
+  * Logistic Regression
+  * Passive-aggressive Classifier
+  * Approximate Large Margin Algorithm Classifier(ALMA)
+
+At this point, we have the final trust value. Defining the boundary between trustworthiness and untrustworthiness can be done by considering the accuracy and F1 score. Furthermore, for better fine-tuning of the models, online learning was done using Logistic Regression, Passive-aggressive Classifier and Approximate Large Margin Algorithm Classifier(ALMA). The whole process is shown in figure 1.
+
+![Sample Image](./images/1.jpg)
+
 ## Experiment Setup and Implementation
 
 ## Results and Analysis
