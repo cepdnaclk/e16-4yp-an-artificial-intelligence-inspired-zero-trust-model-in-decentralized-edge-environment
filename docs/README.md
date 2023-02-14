@@ -151,6 +151,9 @@ Each attack-wise dataset was trained with different kinds of Machine learning Al
 
 ## Conclusion
 
+The zero trust model is a cutting-edge strategy for network security that requires verification of every user and device whenever they want to access resources on a secure network.This is still true whether the object or person is inside or outside the network boundary.This fixes a lot of problems with the traditional network security model, which was based on the idea of a security perimeter. In this research, we developed a machine learning-based Zero Trust architecture. Based on the findings, we presented evidence of how classification machine-learning techniques may aid in enhancing the application of Zero Trust principles throughout a complicated environment. Additionally, it demonstrates how admins' manual effort might be used through machine learning to improve the machine learning model for better judgment in the future while still allowing traffic. Here, in each step we tried, several machine learning algorithms and then based on performance metrics we chose the best algorithm. In our case, classification machine learning algorithms showed more accurate results rather than anomaly detection algorithms. Furthermore, this research used a reliable UNSW-NB-15 dataset with 9 types of different attacks and these attack types were used to create individual trust metrics. By combining individual trust metric values, the final trust value was calculated. Moreover, this research shows how incremental machine learning (Online learning) can be used to simulate the continuous verification principle of Zero Trust. 
+
+
 ## Publications
 [//]: # "Note: Uncomment each once you uploaded the files to the repository"
 
