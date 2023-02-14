@@ -149,7 +149,7 @@ As the N of features (N), 15 was chosen since it gives high accuracy score among
 Each attack-wise dataset was trained with different kinds of Machine learning Algorithms and the most suitable machine-learning algorithm was chosen by comparing the F1 score for the test set. The below table shows the best machine algorithm chosen for each attack-wise dataset.
 
 | Attack Type   | Algorithm       | F1 Score | Accuracy |
-|-------------=-|-----------------|----------|----------|
+|---------------|-----------------|----------|----------|
 |Dos            | ANN             | 0.86     | 99.82 %  |
 |Analysis       | Random Forrest  | 0.69     | 99.44 %  |
 |Backdoors      | ANN             | 0.57     | 99.85 %  |
