@@ -137,6 +137,18 @@ For the machine learning training process, we used different subsets of datasets
 
 ![Sample Image](./images/3.png)
 
+For choosing a suitable N value, the dataset was trained using the Random Forest algorithm for different no of features. 
+| No of features | Accuracy |
+|----------------|----------|
+|5               | 90.57%   |
+| 10             | 95.83%   |
+| 15             | 98.74%   |
+
+As the N of features (N), 15 was chosen since it gives high accuracy score among tested values.   
+
+Each attack-wise dataset was trained with different kinds of Machine learning Algorithms and the most suitable machine-learning algorithm was chosen by comparing the F1 score for the test set. The below table shows the best machine algorithm chosen for each attack-wise dataset.
+
+
 ## Conclusion
 
 ## Publications
