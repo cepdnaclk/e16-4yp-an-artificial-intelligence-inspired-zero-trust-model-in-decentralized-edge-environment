@@ -147,6 +147,7 @@ For the machine learning training process, we used different subsets of datasets
 <p align="center"><i>Figure 3</i></p>
 </p>
 For choosing a suitable N value, the dataset was trained using the Random Forest algorithm for different no of features. 
+
 | No of features | Accuracy |
 |----------------|----------|
 |5               | 90.57%   |
