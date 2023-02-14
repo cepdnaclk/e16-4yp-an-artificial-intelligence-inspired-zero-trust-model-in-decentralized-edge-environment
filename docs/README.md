@@ -132,6 +132,11 @@ In the implementation we mainly used the libraries from python scikit-learn, Cre
 
 ## Results and Analysis
 
+For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
+For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
+
+![Sample Image](./images/3.jpg)
+
 ## Conclusion
 
 ## Publications
