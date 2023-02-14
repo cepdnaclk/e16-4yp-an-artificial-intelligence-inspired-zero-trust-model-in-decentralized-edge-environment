@@ -142,10 +142,10 @@ In the implementation we mainly used the libraries from python scikit-learn, Cre
 For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
 For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
 
-<p align="center">
+<div align="center">
   <img src="./images/3.png" alt = "Figure 3">
 <p align="center"><i>Figure 3</i></p>
-</p>
+</div>
 For choosing a suitable N value, the dataset was trained using the Random Forest algorithm for different no of features. 
 
 | No of features | Accuracy |
@@ -173,15 +173,15 @@ Each attack-wise dataset was trained with different kinds of Machine learning Al
 After applying ensemble learning, online learning was performed to simulate the continuous learning behaviour. This was also done using different machine learning algorithms and Accuracy score and F1 Score values are compared as in Figure 4 and Figure 5.
 
 
-<p align="center">
+<div align="center">
   <img src="./images/4.png" alt = "Figure 4">
 <p align="center"><i>Figure 4</i></p>
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="./images/5.png" alt = "Figure 5">
 <p align="center"><i>Figure 5</i></p>
-</p>
+</div>
 Logistic Regression gave the best accuracy score and F1 score among tested algorithms.
 
 ## Conclusion
