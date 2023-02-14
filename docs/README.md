@@ -148,6 +148,26 @@ As the N of features (N), 15 was chosen since it gives high accuracy score among
 
 Each attack-wise dataset was trained with different kinds of Machine learning Algorithms and the most suitable machine-learning algorithm was chosen by comparing the F1 score for the test set. The below table shows the best machine algorithm chosen for each attack-wise dataset.
 
+| Attack Type   | Algorithm       | F1 Score | Accuracy |
+|-------------=-|-----------------|----------|----------|
+|Dos            | ANN             | 0.86     | 99.82 %  |
+|Analysis       | Random Forrest  | 0.69     | 99.44 %  |
+|Backdoors      | ANN             | 0.57     | 99.85 %  |
+|Fuzzers        | Random Forrest  | 0.63     | 98.17 %  |
+|Exploits       | KNN             | 0.79     | 98.98 %  |
+|Generic        | KNN             | 0.98     | 99.76 %  |
+|Reconnaissance | KNN             | 0.67     | 99.41 %  |
+|Shellcode      | ANN             | 0.42     | 99.09 %  |
+|Worms          | KNN             | 0.45     | 98.47 %  |
+
+After applying ensemble learning, online learning was performed to simulate the continuous learning behaviour. This was also done using different machine learning algorithms and Accuracy score and F1 Score values are compared as in Figure 4 and Figure 5.
+
+
+![Sample Image](./images/4.png)
+
+![Sample Image](./images/5.png)
+
+Logistic Regression gave the best accuracy score and F1 score among tested algorithms.
 
 ## Conclusion
 
