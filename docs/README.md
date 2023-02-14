@@ -20,6 +20,7 @@ title: An Artificial Intelligence Inspired Zero Trust Model in Decentralized Edg
 #### Supervisors
 
 - Dr. Upul Jayasinghe, [upuljm@eng.pdn.ac.lk](mailto:upuljm@eng.pdn.ac.lk)
+- Dr. Suneth Namal Karunaratne, [namal@eng.pdn.ac.lk](mailto:namal@eng.pdn.ac.lk )
 
 #### Table of content
 
@@ -40,10 +41,18 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 
 ## Abstract
-
+Zero trust is a security concept in which no entity or user is automatically trusted—instead, all access must be individually validated through a rigorous set of checks and controls. This approach is based on the idea that no environment can be fully trusted and that protection must be applied holistically across networks, applications, and workloads. Machine learning can be used to implement Zero Trust by enabling the application of dynamic, risk-based access policies based on real-time user behaviour. Machine learning algorithms can analyze characteristics such as device identity, authentication methods, and resource access patterns to identify anomalies and provide adaptive authentication methods for users. Additionally, machine learning can be used for continuous monitoring of user behaviour and malicious activity, allowing organizations to detect and prevent security threats. In this research, we have implemented a zero-trust model which follows the basic principles of zero trust such as Guaranteeing secure access to all resources, No implicit trust based on location, and Continuous verification using machine learning.
 ## Related works
+The word “Zero Trust” was introduced by John Kindervag from Forrester Research and it is based on the principle of “Never trust Always Verify”.Forrester uses a centralized segmentation gateway with multiple zones and each zone includes a “microcore and perimeter” (MCAP ) interface. Forrester’s Next Generation Firewall (NGFW) is used as a segmentation engine and connected to multiple MCAPS. The segmentation engine receives the traffic from MCAP segments and forwards them into Data Acquisition Network (DAN) MCAPs in order to analyze them to make decisions about the clients.
+
+Google BeyondCorp is a security framework that emphasizes a zero-trust approach to network security. Zero trust is a security model that assumes no user, device, or application can be trusted by default, even if they are inside the network perimeter. Instead, access to resources is based on identity, context, and policy, regardless of the user's location or the device they're using. BeyondCorp implements this model by using contextual information such as user identity, device security posture, and network location to enforce access controls and authorization decisions. This approach reduces the risk of data breaches and improves security posture for organizations, and it's used by Google to protect its own internal networks and employees can use network resources from any location without the need for a traditional VPN.
+
+An Artificial Intelligence Approach for Deploying Zero Trust Architecture (ZTA)
+
+The paper highlights the growing importance of Zero Trust Architecture (ZTA) as a cybersecurity framework for protecting organizational networks against advanced threats because the traditional approach of implementing ZTA can be challenging, time-consuming, and resource-intensive. The paper proposed a NIST-based policy engine which consists of static policies(a well-known fact by now), security feeds(To maintain the same security posture as older security controls) and ML policies. The final algorithm works as follows. First, it tries to make a decision based on static policies. If a decision cannot be made, security feeds are used to make the decision. If it fails to make a decision, the ML model is used to derive the decision.
 
 ## Methodology
+Before doing anything data preprocessing was applied to the raw dataset and the following techniques were applied.
 
 ## Experiment Setup and Implementation
 
