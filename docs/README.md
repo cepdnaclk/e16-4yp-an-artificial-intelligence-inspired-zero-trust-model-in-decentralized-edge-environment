@@ -193,9 +193,9 @@ The zero trust model is a cutting-edge strategy for network security that requir
 [//]: # "Note: Uncomment each once you uploaded the files to the repository"
 
 <!-- 1. [Semester 7 report](./) -->
-<!-- 2. [Semester 7 slides](./) -->
+1. [Semester 7 slides](./slides/Semester%207.pptx)
 <!-- 3. [Semester 8 report](./) -->
-<!-- 4. [Semester 8 slides](./) -->
+2. [Semester 8 slides](./slides/Semester%208.pptx)
 <!-- 5. Author 1, Author 2 and Author 3 "Research paper title" (2021). [PDF](./). -->
 
 
