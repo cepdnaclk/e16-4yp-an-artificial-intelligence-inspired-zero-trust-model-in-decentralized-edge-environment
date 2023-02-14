@@ -118,20 +118,20 @@ If we get a higher probability value than 0.9 when traffic data is fed into the 
 
 At this point, we have the final trust value. Defining the boundary between trustworthiness and untrustworthiness can be done by considering the accuracy and F1 score. Furthermore, for better fine-tuning of the models, online learning was done using Logistic Regression, Passive-aggressive Classifier and Approximate Large Margin Algorithm Classifier(ALMA). The whole process is shown in figure 1.
 
-<p align="center">
+<div align="center">
   <img src="./images/1.jpg" alt = "Figure 1">
 <p align="center"><i>Figure 1</i></p>
-</p>
+</div>
 
 
 ## Experiment Setup and Implementation
 
 This project used the UNSW NB15 dataset for training our Machine Learning models which are publicly available on https://research.unsw.edu.au/projects/unsw-nb15-dataset . This dataset was collected using a test bed set up as shown in Figure 2. 
 
-<p align="center">
+<div align="center">
   <img src="./images/2.jpg" alt = "Figure 2">
 <p align="center"><i>Figure 2</i></p>
-</p>
+</div>
 
 As shown in the figure IXIA traffic generator was used with 3 virtual servers which are connected to 2 virtual interfaces for intercommunication. Server 1 and 3 are generating normal traffic and server 2 is generating malware traffic and then traffic is distributed over the network up to clients via Router 1 and Router 2. These routers are connected to a firewall which is configured to pass all the traffic either normal or abnormal. The tcpdump tool is installed on router 1 to capture the Pcap files of the simulation uptime and Pcap files are further processed to extract datasets to excel sheets.
 
