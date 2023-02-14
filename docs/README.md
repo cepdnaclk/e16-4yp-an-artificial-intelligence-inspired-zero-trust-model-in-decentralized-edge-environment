@@ -126,7 +126,7 @@ At this point, we have the final trust value. Defining the boundary between trus
 
 ## Experiment Setup and Implementation
 
-This project used the UNSW NB15 dataset for training our Machine Learning models which are publicly available on https://research.unsw.edu.au/projects/unsw-nb15-dataset . This dataset was collected using a test bed set up as shown in the following figure. 
+This project used the UNSW NB15 dataset for training our Machine Learning models which are publicly available on https://research.unsw.edu.au/projects/unsw-nb15-dataset . This dataset was collected using a test bed set up as shown in Figure 2. 
 
 <p align="center">
   <img src="./images/2.jpg" alt = "Figure 2">
