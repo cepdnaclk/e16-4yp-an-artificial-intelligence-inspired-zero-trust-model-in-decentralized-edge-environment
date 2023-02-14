@@ -118,13 +118,20 @@ If we get a higher probability value than 0.9 when traffic data is fed into the 
 
 At this point, we have the final trust value. Defining the boundary between trustworthiness and untrustworthiness can be done by considering the accuracy and F1 score. Furthermore, for better fine-tuning of the models, online learning was done using Logistic Regression, Passive-aggressive Classifier and Approximate Large Margin Algorithm Classifier(ALMA). The whole process is shown in figure 1.
 
-![Sample Image](./images/1.jpg)
+<p align="center">
+  <img src="./images/1.jpg" alt = "Figure 1">
+<p align="center"><i>Figure 1</i></p>
+</p>
+
 
 ## Experiment Setup and Implementation
 
 This project used the UNSW NB15 dataset for training our Machine Learning models which are publicly available on https://research.unsw.edu.au/projects/unsw-nb15-dataset . This dataset was collected using a test bed set up as shown in the following figure. 
 
-![Sample Image](./images/2.jpg)
+<p align="center">
+  <img src="./images/2.jpg" alt = "Figure 2">
+<p align="center"><i>Figure 2</i></p>
+</p>
 
 As shown in the figure IXIA traffic generator was used with 3 virtual servers which are connected to 2 virtual interfaces for intercommunication. Server 1 and 3 are generating normal traffic and server 2 is generating malware traffic and then traffic is distributed over the network up to clients via Router 1 and Router 2. These routers are connected to a firewall which is configured to pass all the traffic either normal or abnormal. The tcpdump tool is installed on router 1 to capture the Pcap files of the simulation uptime and Pcap files are further processed to extract datasets to excel sheets.
 
@@ -135,8 +142,10 @@ In the implementation we mainly used the libraries from python scikit-learn, Cre
 For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
 For the machine learning training process, we used different subsets of datasets of the original dataset for 9 types of attacks. For each attack-wise dataset, we used the information gain technique to identify the most important N features for that particular dataset. For DoS attacks, we obtained the information gain results as in Figure 3. Features with the highest gain(Left side of the figure) are the most important features.
 
-![Sample Image](./images/3.png)
-
+<p align="center">
+  <img src="./images/3.png" alt = "Figure 3">
+<p align="center"><i>Figure 3</i></p>
+</p>
 For choosing a suitable N value, the dataset was trained using the Random Forest algorithm for different no of features. 
 | No of features | Accuracy |
 |----------------|----------|
@@ -163,10 +172,15 @@ Each attack-wise dataset was trained with different kinds of Machine learning Al
 After applying ensemble learning, online learning was performed to simulate the continuous learning behaviour. This was also done using different machine learning algorithms and Accuracy score and F1 Score values are compared as in Figure 4 and Figure 5.
 
 
-![Sample Image](./images/4.png)
+<p align="center">
+  <img src="./images/4.png" alt = "Figure 4">
+<p align="center"><i>Figure 4</i></p>
+</p>
 
-![Sample Image](./images/5.png)
-
+<p align="center">
+  <img src="./images/5.png" alt = "Figure 5">
+<p align="center"><i>Figure 5</i></p>
+</p>
 Logistic Regression gave the best accuracy score and F1 score among tested algorithms.
 
 ## Conclusion
